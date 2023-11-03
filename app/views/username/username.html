@@ -1,0 +1,322 @@
+<body
+  class="auth-no-skin ap-locale-en_US a-m-us a-aui_72554-c a-aui_accordion_a11y_role_354025-t1 a-aui_killswitch_csa_logger_372963-c a-aui_pci_risk_banner_210084-c a-aui_preload_261698-c a-aui_rel_noreferrer_noopener_309527-c a-aui_template_weblab_cache_333406-c a-aui_tnr_v2_180836-c"
+>
+  <div id="a-page">
+    <div class="a-section a-padding-medium auth-workflow">
+      <div class="a-section a-spacing-none auth-navbar">
+        <div class="a-section a-spacing-medium a-text-center">
+          <a class="a-link-nav-icon" tabindex="-1" href="/ref=ap_frn_logo">
+            <i class="a-icon a-icon-logo" role="img" aria-label="Amazon"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="authportal-center-section" class="a-section">
+        <div id="authportal-main-section" class="a-section">
+          <div class="a-section a-spacing-base auth-pagelet-container">
+            <div
+              id="auth-cookie-warning-message"
+              class="a-box a-alert a-alert-warning"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              <div class="a-box-inner a-alert-container">
+                <h4 class="a-alert-heading">
+                  Please Enable Cookies to Continue
+                </h4>
+                <i class="a-icon a-icon-alert"></i>
+                <div class="a-alert-content">
+                  <p>
+                    <a
+                      class="a-link-normal"
+                      href="/gp/help/customer/display.html/ref=ap_cookie_error_help?"
+                    >
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="a-section auth-pagelet-container">
+            <div
+              id="passkey-error-alert"
+              class="a-box a-alert a-alert-error aok-hidden"
+              role="alert"
+            >
+              <div class="a-box-inner a-alert-container">
+                <h4 class="a-alert-heading">Passkey error</h4>
+                <i class="a-icon a-icon-alert"></i>
+                <div class="a-alert-content">
+                  <p id="passkey-client-error-message">
+                    Something went wrong, please sign-in another way or follow
+                    any instructions provided by your device.
+                  </p>
+                  <p
+                    id="passkey-generic-server-error-message"
+                    class="aok-hidden"
+                  >
+                    Sorry, your passkey isn't working. There might be a problem
+                    with the server. Sign in with your password or try your
+                    passkey again later.
+                  </p>
+                  <p id="passkey-server-error-message" class="aok-hidden"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="a-section a-spacing-base">
+              <div class="a-section">
+                <form
+                  name="signIn"
+                  method="post"
+                  novalidate
+                  action="https://www.amazon.com/ap/signin"
+                  class="auth-validate-form auth-real-time-validation a-spacing-none"
+                >
+                  <input
+                    type="hidden"
+                    name="appActionToken"
+                    value="XzlZAj3UZ5X7e7lvyqcxDEI9rKcj3D"
+                  /><input
+                    type="hidden"
+                    name="appAction"
+                    value="SIGNIN_PWD_COLLECT"
+                  />
+                  <input
+                    type="hidden"
+                    name="subPageType"
+                    value="SignInClaimCollect"
+                  />
+
+                  <input
+                    type="hidden"
+                    name="openid.return_to"
+                    value="ape:aHR0cHM6Ly93d3cuYW1hem9uLmNvbS8/X2VuY29kaW5nPVVURjgmcmVmXz1uYXZfeWFfc2lnbmlu"
+                  />
+
+                  <input
+                    type="hidden"
+                    name="prevRID"
+                    value="ape:RVpNUzROUlBLWk5LSzJUWVBRNE0="
+                  />
+
+                  <input
+                    type="hidden"
+                    name="workflowState"
+                    value="eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.4bCp7u_BHcOMVApxyHNqg_IL13xtpEqMCfR7T3YKBH1amjYvkfqFFg.wCEcwxOIzbMTAqlC.19Jvboz4Vc2B8FZrNp1CAujCcAg8pDHh_INBqCcs1UKR3DkfAaeL-EAeOu4irUO9s42pli9gOerU1mkyEUNh44mI-yE0NRuqdX4BT6zPNF4pVdkszWqnGmDYcYnw9aibXMtvxHd652rOwJ_qrOuEgdzHdRl6k6AcBQ09SuKNcaus0lun5cKV4AD1qkiA7g1_HBhPzn32SdZ-ddgoAq136K1BSOyez4pH2hPdO6N6SxwgbdOPWSbomqxGLeP7VvV1IW2QEKmhZVJx85QTMURk8nZMZSN3s2nFDH7yOVnDVwxufmG_Fupm2KgH3lZ7e_ZKwRM.8bVJw8HZn94cbSl1byZEsg"
+                  />
+
+                  <div class="a-section">
+                    <div class="a-box">
+                      <div class="a-box-inner a-padding-extra-large">
+                        <h1 class="a-spacing-small">Sign in</h1>
+                        <!-- optional subheading element -->
+
+                        <div class="a-row a-spacing-base">
+                          <label for="ap_email" class="a-form-label">
+                            Email or mobile phone number
+                          </label>
+                          <input
+                            type="email"
+                            maxlength="128"
+                            id="ap_email"
+                            name="email"
+                            tabindex="1"
+                            class="a-input-text a-span12 auth-autofocus auth-required-field"
+                          />
+
+                          <input
+                            type="password"
+                            maxlength="1024"
+                            id="ap-credential-autofill-hint"
+                            name="password"
+                            class="a-input-text hide"
+                          />
+
+                          <div
+                            id="auth-email-missing-alert"
+                            class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini"
+                            role="alert"
+                          >
+                            <div class="a-box-inner a-alert-container">
+                              <i class="a-icon a-icon-alert"></i>
+                              <div class="a-alert-content">
+                                Enter your email or mobile phone number
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <input type="hidden" name="create" value="0" />
+
+                        <div class="a-section">
+                          <span
+                            id="continue"
+                            class="a-button a-button-span12 a-button-primary"
+                            ><span class="a-button-inner"
+                              ><input
+                                id="continue"
+                                tabindex="5"
+                                class="a-button-input"
+                                type="submit"
+                                aria-labelledby="continue-announce"
+                              /><span
+                                id="continue-announce"
+                                class="a-button-text"
+                                aria-hidden="true"
+                              >
+                                Continue
+                              </span></span
+                            ></span
+                          >
+
+                          <div
+                            id="legalTextRow"
+                            class="a-row a-spacing-top-medium a-size-small"
+                          >
+                            By continuing, you agree to Amazon's
+                            <a
+                              href="/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&amp;nodeId=508088"
+                              >Conditions of Use</a
+                            >
+                            and
+                            <a
+                              href="/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&amp;nodeId=468496"
+                              >Privacy Notice</a
+                            >.
+                          </div>
+                        </div>
+
+                        <div class="a-section">
+                          <div
+                            class="a-row a-expander-container a-expander-inline-container"
+                          >
+                            <a
+                              data-csa-c-func-deps="aui-da-a-expander-toggle"
+                              data-csa-c-type="widget"
+                              data-csa-interaction-events="click"
+                              aria-expanded="false"
+                              role="button"
+                              href="javascript:void(0)"
+                              data-action="a-expander-toggle"
+                              class="a-expander-header a-declarative a-expander-inline-header a-link-expander"
+                              data-a-expander-toggle='{"allowLinkDefault":true, "expand_prompt":"", "collapse_prompt":""}'
+                              ><i class="a-icon a-icon-expand"></i
+                              ><span class="a-expander-prompt">
+                                Need help?
+                              </span></a
+                            >
+
+                            <div
+                              aria-expanded="false"
+                              class="a-expander-content a-expander-inline-content a-expander-inner"
+                              style="display: none"
+                            >
+                              <a
+                                id="auth-fpp-link-bottom"
+                                class="a-link-normal"
+                                href="https://www.amazon.com/ap/forgotpassword?showRememberMe=true&amp;openid.pape.max_auth_age=0&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=usflex&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_ya_signin&amp;prevRID=EZMS4NRPKZNKK2TYPQ4M&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+                              >
+                                Forgot your password?
+                              </a>
+                            </div>
+
+                            <div
+                              aria-expanded="false"
+                              class="a-expander-content a-expander-inline-content a-expander-inner"
+                              style="display: none"
+                            >
+                              <a
+                                id="ap-other-signin-issues-link"
+                                class="a-link-normal"
+                                href="/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8"
+                              >
+                                Other issues with Sign-In
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="a-divider a-divider-break">
+                <h5 aria-level="5">New to Amazon?</h5>
+              </div>
+              <span
+                id="auth-create-account-link"
+                class="a-button a-button-span12 a-button-base"
+                ><span class="a-button-inner"
+                  ><a
+                    id="createAccountSubmit"
+                    href="https://www.amazon.com/ap/register?showRememberMe=true&amp;openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_ya_signin&amp;prevRID=EZMS4NRPKZNKK2TYPQ4M&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=usflex&amp;openid.mode=checkid_setup&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=usflex&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+                    class="a-button-text"
+                  >
+                    Create your Amazon account
+                  </a></span
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="right-2"></div>
+
+      <div class="a-section a-spacing-top-extra-large auth-footer">
+        <div class="a-divider a-divider-section">
+          <div class="a-divider-inner"></div>
+        </div>
+
+        <div class="a-section a-spacing-small a-text-center a-size-mini">
+          <span class="auth-footer-seperator"></span>
+          <a
+            class="a-link-normal"
+            target="_blank"
+            rel="noopener"
+            href="/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&amp;nodeId=508088"
+          >
+            Conditions of Use
+          </a>
+          <span class="auth-footer-seperator"></span>
+
+          <a
+            class="a-link-normal"
+            target="_blank"
+            rel="noopener"
+            href="/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&amp;nodeId=468496"
+          >
+            Privacy Notice
+          </a>
+          <span class="auth-footer-seperator"></span>
+
+          <a class="a-link-normal" target="_blank" rel="noopener" href="/help">
+            Help
+          </a>
+          <span class="auth-footer-seperator"></span>
+        </div>
+
+        <div class="a-section a-spacing-none a-text-center">
+          <span class="a-size-mini a-color-secondary">
+            © 1996-2023, Amazon.com, Inc. or its affiliates
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="auth-external-javascript"
+      class="auth-external-javascript"
+      data-external-javascripts=""
+    ></div>
+    <!-- cache slot rendered -->
+  </div>
+  <div id="be" style="display: none; visibility: hidden">
+    <form name="ue_backdetect" action="get">
+      <input type="hidden" name="ue_back" value="1" />
+    </form>
+  </div>
+</body>
